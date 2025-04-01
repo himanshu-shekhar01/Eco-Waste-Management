@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Waste Management</title>
+</head>
+
+<body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .fade-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 1s ease-out;
+        }
+
+        .fade-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+
+    <!-- Hero Section -->
+    <header class="h-screen text-white bg-cover bg-center bg-no-repeat flex flex-col justify-between"
+        style="background-image: url('images/herosection.jpg');">
+        <!-- Navigation -->
+        <nav class="w-full px-4 py-6 flex justify-between items-center text-white">
+            <div class="text-3xl font-bold cursor-pointer">EcoWaste Solutions</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-green-400 transition font-bold text-2xl">Home</a>
+                <a href="#services" class="hover:text-green-400 transition font-bold text-2xl">Services</a>
+                <a href="#about" class="hover:text-green-400 transition font-bold text-2xl">About</a>
+                <a href="#contact" class="hover:text-green-400 transition font-bold text-2xl">Contact</a>
+            </div>
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="container mx-auto px-6 text-center flex-grow flex flex-col justify-center items-center">
+            <h1 class="text-6xl font-bold mb-6">
+                Sustainable Waste Management Solutions
+            </h1>
+            <p class="text-xl mb-8">Helping create a cleaner, greener future for our planet</p>
+
+            <button onclick="scrollToSection('services')"
+                class="relative inline-flex items-center justify-center px-8 py-2.5 overflow-hidden tracking-tighter text-green-600 bg-white rounded-full group font-bold transition duration-300 ease-in-out">
+                <span
+                    class="absolute w-0 h-0 transition-all duration-500 ease-out bg-green-400 rounded-full group-hover:w-56 group-hover:h-56">
+                </span>
+                <span class="absolute bottom-0 left-0 h-full -ml-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-auto h-full opacity-100 object-stretch"
+                        viewBox="0 0 487 487">
+                        <path fill-opacity=".1" fill-rule="nonzero" fill="#FFF"
+                            d="M0 .3c67 2.1 134.1 4.3 186.3 37 52.2 32.7 89.6 95.8 112.8 150.6 23.2 54.8 32.3 101.4 61.2 149.9 28.9 48.4 77.7 98.8 126.4 149.2H0V.3z">
+                        </path>
+                    </svg>
+                </span>
+                <span class="absolute top-0 right-0 w-12 h-full -mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="object-cover w-full h-full" viewBox="0 0 487 487">
+                        <path fill-opacity=".1" fill-rule="nonzero" fill="#FFF"
+                            d="M487 486.7c-66.1-3.6-132.3-7.3-186.3-37s-95.9-85.3-126.2-137.2c-30.4-51.8-49.3-99.9-76.5-151.4C70.9 109.6 35.6 54.8.3 0H487v486.7z">
+                        </path>
+                    </svg>
+                </span>
+                <span
+                    class="absolute inset-0 w-full h-full -mt-1 px-8 py-3 rounded-full font-bold opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-200">
+                </span>
+                <span
+                    class="relative text-base font-semibold transition duration-300 ease-in-out group-hover:text-black">
+                    Get Started
+                </span>
+            </button>
+
+            <script>
+                function scrollToSection(sectionId) {
+                    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+                }
+            </script>
+
+
+            <script>
+                function scrollToSection(sectionId) {
+                    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+                }
+            </script>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-gray-50 fade-section" id="services">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="bg-white p-8 rounded-lg shadow-lg transition transform hover:scale-105 hover:bg-green-50 hover:shadow-2xl">
+                    <div class="text-5xl mb-4 text-green-500 text-center">♻️</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-center">Recycling Services</h3>
+                    <p class="text-gray-600 text-center">
+                        Professional recycling solutions for residential and commercial needs.
+                    </p>
+                    <div class="mt-4 flex justify-center">
+                        <button
+                            class="bg-green-600 text-white px-6 py-2 rounded-full font-bold hover:bg-green-700 transition">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-lg shadow-lg transition transform hover:scale-105 hover:bg-green-50 hover:shadow-2xl">
+                    <div class="text-5xl mb-4 text-green-500 text-center">🚛</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-center">Waste Collection</h3>
+                    <p class="text-gray-600 text-center">Regular and reliable waste collection services.</p>
+                    <div class="mt-4 flex justify-center">
+                        <button
+                            class="bg-green-600 text-white px-6 py-2 rounded-full font-bold hover:bg-green-700 transition">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-lg shadow-lg transition transform hover:scale-105 hover:bg-green-50 hover:shadow-2xl">
+                    <div class="text-5xl mb-4 text-green-500 text-center">🌱</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-center">Green Initiatives</h3>
+                    <p class="text-gray-600 text-center">Sustainable waste management consulting and solutions.</p>
+                    <div class="mt-4 flex justify-center">
+                        <button
+                            class="bg-green-600 text-white px-6 py-2 rounded-full font-bold hover:bg-green-700 transition">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-green-600 text-white fade-section">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                <div class="p-6">
+                    <h3 class="text-4xl font-bold animate-[bounce_2s_ease-in-out_infinite]">5000+</h3>
+                    <p class="mt-2">Clients Served</p>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-4xl font-bold animate-[bounce_2s_ease-in-out_infinite]">95%</h3>
+                    <p class="mt-2">Recycling Rate</p>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-4xl font-bold animate-[bounce_2s_ease-in-out_infinite]">15+</h3>
+                    <p class="mt-2">Years Experience</p>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-4xl font-bold animate-[bounce_2s_ease-in-out_infinite]">24/7</h3>
+                    <p class="mt-2">Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-white fade-section" id="about">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b" alt="Recycling"
+                        class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-4xl font-bold mb-6">About Us</h2>
+                    <p class="text-gray-600 mb-6">We are committed to providing sustainable waste management solutions
+                        that protect our environment for future generations. Our team of experts works tirelessly to
+                        ensure proper waste disposal and maximize recycling efforts.</p>
+                    <button
+                        class="bg-green-600 text-white px-8 py-3 rounded-full font-bold hover:bg-green-700 transition">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-gray-50 fade-section" id="contact">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Contact Us</h2>
+            <div class="max-w-2xl mx-auto">
+                <form class="space-y-6">
+                    <div>
+                        <input type="text" placeholder="Your Name"
+                            class="w-full px-4 py-3 rounded-lg border focus:outline-none focus:border-green-500">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Your Email"
+                            class="w-full px-4 py-3 rounded-lg border focus:outline-none focus:border-green-500">
+                    </div>
+                    <div>
+                        <textarea placeholder="Your Message" rows="5"
+                            class="w-full px-4 py-3 rounded-lg border focus:outline-none focus:border-green-500"></textarea>
+                    </div>
+                    <button
+                        class="w-full bg-green-600 text-white px-8 py-3 rounded-full font-bold hover:bg-green-700 transition">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">EcoWaste Solutions</h3>
+                    <p class="text-gray-400">Making waste management sustainable and efficient.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">About</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>123 Eco Street</li>
+                        <li>Green City, EC 12345</li>
+                        <li>Phone: (123) 456-7890</li>
+                        <li>Email: info@ecowaste.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">Facebook</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">Twitter</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 EcoWaste Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Fade in sections on scroll
+        const fadeSections = document.querySelectorAll('.fade-section');
+
+        const fadeCallback = (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        };
+
+        const fadeObserver = new IntersectionObserver(fadeCallback);
+
+        fadeSections.forEach(section => {
+            fadeObserver.observe(section);
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
